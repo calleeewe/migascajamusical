@@ -387,7 +387,7 @@ const handlePointerMove = (event: any) => {
 
       if (audioRef.current.paused) {
 
-        audioRef.current.play().catch(e => console.log('Playback error:', e));
+        audioRef.current.play().catch((e: any) => console.log('Playback error:', e));
 
         setIsPlaying(true);
 
