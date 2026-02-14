@@ -63,7 +63,7 @@ const MusicBox = () => {
 
   const analyserRef = useRef<any>(null);
 
-  const sourceRef = useRef(null);
+  const sourceRef = useRef<any>(null);
 
   const animationRef = useRef(null);
 
