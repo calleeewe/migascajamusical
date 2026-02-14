@@ -305,57 +305,33 @@ const MusicBox = () => {
 
 
 
-  const handlePointerStart = (event: any) => {
-
+const handlePointerStart = (event: any) => {
     if (!audioLoaded) return;
-
-   
-
+    
     event.preventDefault();
-
     isDragging.current = true;
-
-   
-
-    const handlePointerMove = (event: any) => {
-
+    
+    const rect = event.currentTarget.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
-
     const centerY = rect.top + rect.height / 2;
-
-   
-
+    
     crankX.current = centerX;
-
     crankY.current = centerY;
-
-   
-
+    
     const clientX = event.touches ? event.touches[0].clientX : event.clientX;
-
     const clientY = event.touches ? event.touches[0].clientY : event.clientY;
-
-   
-
+    
     lastAngleRef.current = calculateAngle(clientX, clientY, centerX, centerY);
-
     lastTimeRef.current = Date.now();
 
-
-
-    // Reanudar contexto de audio
-
     if (audioContextRef.current.state === 'suspended') {
-
       audioContextRef.current.resume();
-
     }
-
-  };
-
+  }; 
 
 
-  const handlePointerMove = (event) => {
+
+const handlePointerMove = (event: any) => {
 
     if (!isDragging.current || !audioLoaded) return;
 
@@ -434,7 +410,7 @@ const MusicBox = () => {
     isDragging.current = false;
 
   };
-
+ 
 
 
   return (
