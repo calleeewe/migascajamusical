@@ -91,7 +91,7 @@ const MusicBox = () => {
 
   // Formatear tiempo
 
-  const formatTime = (seconds) => {
+  const formatTime = (seconds: any) => {
 
     if (isNaN(seconds)) return '0:00';
 
