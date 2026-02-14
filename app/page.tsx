@@ -233,7 +233,7 @@ const MusicBox = () => {
 
   // Calcular ángulo desde el centro
 
-  const calculateAngle = (x, y, centerX, centerY) => {
+  const calculateAngle = (x: any, y: any, centerX: any, centerY: any) => {
 
     return Math.atan2(y - centerY, x - centerX);
 
