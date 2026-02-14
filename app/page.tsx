@@ -65,13 +65,13 @@ const MusicBox = () => {
 
   const sourceRef = useRef<any>(null);
 
-  const animationRef = useRef(null);
+  const animationRef = useRef<any>(null);
 
-  const lastAngleRef = useRef(0);
+  const lastAngleRef = useRef<any>(0);
 
-  const lastTimeRef = useRef(Date.now());
+  const lastTimeRef = useRef<any>(Date.now());
 
-  const velocityRef = useRef(0);
+  const velocityRef = useRef<any>(0);
 
  
 
