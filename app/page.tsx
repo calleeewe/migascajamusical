@@ -59,9 +59,9 @@ const MusicBox = () => {
 
   const audioRef = useRef<any>(null);
 
-  const audioContextRef = useRef(null);
+  const audioContextRef = useRef<any>(null);
 
-  const analyserRef = useRef(null);
+  const analyserRef = useRef<any>(null);
 
   const sourceRef = useRef(null);
 
