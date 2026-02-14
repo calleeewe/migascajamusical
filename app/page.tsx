@@ -305,7 +305,7 @@ const MusicBox = () => {
 
 
 
-  const handlePointerStart = (event) => {
+  const handlePointerStart = (event: any) => {
 
     if (!audioLoaded) return;
 
@@ -317,7 +317,7 @@ const MusicBox = () => {
 
    
 
-    const rect = event.currentTarget.getBoundingClientRect();
+    const handlePointerMove = (event: any) => {
 
     const centerX = rect.left + rect.width / 2;
 
@@ -429,7 +429,7 @@ const MusicBox = () => {
 
 
 
-  const handlePointerEnd = () => {
+  const handlePointerEnd = (event?: any) => {
 
     isDragging.current = false;
 
