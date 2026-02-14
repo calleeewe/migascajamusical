@@ -141,7 +141,7 @@ const MusicBox = () => {
 
     // Web Audio API para visualización
 
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
 
     const analyser = audioContext.createAnalyser();
 
