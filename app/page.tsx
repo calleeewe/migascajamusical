@@ -57,7 +57,7 @@ const MusicBox = () => {
 
  
 
-  const audioRef = useRef(null);
+  const audioRef = useRef<any>(null);
 
   const audioContextRef = useRef(null);
 
